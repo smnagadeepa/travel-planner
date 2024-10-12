@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Blog</title>
+    <!-- Ensure the Font Awesome link is correct -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>    
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>  
+        <nav class="navbar">
+            <a href="/index">Home</a>
+            <a href="/blog">Blog</a>
+            <!-- <a href="#packages">Packages</a> -->
+            <a href="/gallery">Gallery</a>
+            <!-- <a href="#reviews">Reviews</a> -->
+            <a href="/contact">Contact</a>
+            <a href="/serch">Search</a>
+        </nav>
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <!-- <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i> -->
+        </div>
+        
+    </header>  
+    <!-- Post content -->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <a href="/blog" class="back-home">Back to home</a>
+            <h1 class="header-title">Coorg: More Scottish Than Scotland</h1>
+            <img src="{{ url_for('static', filename='images/blogpic-21.jpg') }}" alt="" class="header-img">
+        </div>
+    </section>
+    <section class="post-content">
+        <h2 class="sub-heading">Coorg: More Scottish Than Scotland</h2>
+        <p class="post-text">Picturing Coorg is a form of meditation in itself. The smell of filter coffee is strong enough to wake you up. The fog from the misty hills wraps you in a cocoon of slumber. The lull of sleep gently lifts from your eyes as it is exposed to the dewy verdant greenery all around. The smile and affability of the Kodavas make you feel at home.</p>
+        <p class="post-text">Coorg, locally known as Kodagu, is often called the ‘Scotland of India’. Blessed with scintillating beauty and pleasant weather, these highlands make for the perfect holiday destination. There is so much to talk about the hospitality and how the people are as much a part of the Coorg experience as the landscape.</p>
+        <!-- <img src="images/blogpic-21.jpg" alt="" class="content-img"> -->
+        <h2 class="sub-heading">Kodavas</h2>
+        <p class="post-text">Although there is no accurate history on this ethno-linguistic group from Coorg, the Kodavas or the Kodava people are as important as Coorg itself and have lived there for thousands of years. Mostly consisting of land-owners and farmers, they are well-known for their expertise in agriculture, martial arts skills and hospitality.</p>
+        <!-- <img src="images/blogpic-31.jpg" alt="" class="content-img"> -->
+        <!-- <p class="post-text"></p> -->
+        <h2 class="sub-heading">Food</h2>
+        <p class="post-text">Kodava women pride themselves in their culinary skills. To be a Kodava is to be an excellent cook. When in Coorg, you don’t have to spend an exorbitant money on food and stay at hotels. Coorg is well known for its home stay system. A good night’s sleep and a table full of spread is guaranteed on a Kodagu family’s behalf.</p>
+        <p class="post-text">Now that all the doubts about hospitality are out of the way, we can move on to all the places that must be visited once in Coorg.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-31.jpg') }}" alt="" class="content-img">
+        <h2 class="sub-heading">Madikeri Fort</h2>
+        <p class="post-text">A monument that holds so much historical and cultural significance, the Madikeri or Mercara Fort is a place worth visiting. Currently a museum, it asks for no entry fee and is open till the evening. There are other buildings as well inside the fort. These are Mahatma Gandhi Public Library and the Kote Maha Ganapathi temple.</p>
+        <h2 class="sub-heading">Abbey Falls</h2>
+        <p class="post-text">The picturesque Abbey falls owes its origins to the Kaveri river. The waterfall sits amidst sprawling coffee plantations, and the view is best enjoyed from the hanging bridge next to it.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-33.jpg') }}" alt="" class="content-img">
+        <h2 class="sub-heading">Raja's Seat</h2>
+        <p class="post-text">A very popular tourist attraction, Raja’s Seat means the Seat of the Kings. Located in Madikeri, this place is full of flowers and orchards. It used to be the resting place for many Kodagu kings. Nowadays plenty of people come around to watch the sunrise and the sunset and photograph it. Take a stroll through the garden, you are bound to spot more than a thousand blooming flowers.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-34.jpg') }}" alt="" class="content-img">
+        <h2 class="sub-heading">Golden Temple</h2>
+        <p class="post-text">The Golden temple of Coorg, also known as the Namdroling Monastery, is a completely different experience for outsiders used to city life. A type of tranquility only familiar to Buddhist monks yet craved by all pervades the monastery, which is also one of the largest Tibetan settlements in India.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-35.jpg') }}" alt="" class="content-img">
+    </section>
+
+    <div class="share post-container">
+        <span class="share-title">Share this Article</span>
+        <div class="social">
+            <a href="https://www.facebook.com/KSTDCLtd1/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/kstdc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/kstdc/?hl=en"><i class="bx bxl-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer-container">
+        <p>&#169; Corporation All Rights Reserved</p>
+    </div>    
+    <!-- blog section ends -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Blog</title>
+    <!-- Ensure the Font Awesome link is correct -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>    
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>  
+        <nav class="navbar">
+            <a href="/index">Home</a>
+            <a href="/blog">Blog</a>
+            <!-- <a href="#packages">Packages</a> -->
+            <a href="/gallery">Gallery</a>
+            <!-- <a href="#reviews">Reviews</a> -->
+            <a href="/contact">Contact</a>
+            <a href="/serch">Search</a>
+        </nav>
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <!-- <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i> -->
+        </div>
+        
+    </header>  
+    <!-- Post content -->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <a href="/blog" class="back-home">Back to home</a>
+            <h1 class="header-title">Keeping it chic in Chickamagaluru</h1>
+            <img src="{{ url_for('static', filename='images/blogpic-11.jpg') }}" alt="" class="header-img">
+        </div>
+    </section>
+    <section class="post-content">
+        <h2 class="sub-heading">Keeping it chic in Chickamagaluru</h2>
+        <p class="post-text">Chikmagalur is a beautiful district located in the western part of Karnataka. A picturesque location 
+            renowned for its dense greenery, rugged mountains and acres of tea and coffee plantations, Chikmagalur 
+            is an adventure seeker’s abode and a pilgrim’s paradise. Here’s a guide if you are planning to visit the region.</p>
+        <h2 class="sub-heading">Secret Behind the name</h2>
+        <p class="post-text">Chikmagalur translates to ‘Younger Daughter’s land’. It was given as dowry to the 
+            younger daughter of the Chief of Sakrepatna, Rukmangada. There is also a place called Hiremagalur, 
+            ‘Land of the Elder Daughter’. 
+            Ancient manuscripts reveal that they were previously called Kiriya-muguli and Piriya-muguli.</p>
+        <h1 class="sub-heading">Things to do</h1>
+        <h2 class="sub-heading">Mullayanagiri Peak</h2>
+        <p class="post-text">Adrenaline junkies and adventure lovers are going to love Mullayanagiri, 
+            the highest peak in Karnataka. You can go trekking, road biking and mountain riding here. 
+            The best part about this hill is how it’s accessible to both kids and adults. Once past the Sarnapanadi 
+            trail, you get to witness a breathtaking view. The ever-pleasant weather and the incredible view draws 
+            tourists from all over the world throughout the year to Mullayanagiri.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-13.jpg') }}" alt="" class="content-img">
+        <h2 class="sub-heading">Baba Budangiri</h2>
+        <p class="post-text">Adored by pilgrims and trekkers alike, Baba Budangiri has one of the oldest coffee plantations in India. There’s a shrine worshiped by Hindus and Muslims alike. The Hindus believe Lord Dattatraya lives in the caves of Baba Budangiri and that he is an embodiment of Brahma-Vishnu-Mahadev. Whereas the Muslim community believes that an Islamic saint was sent here directly by Prophet Mohammed. A story passed down from generation to generation, the legend goes that the saint traveled all the way from Mecca and planted the seven coffee seeds in the mountains of Baba Budangiri.
+            The trekkers from Mullayanagiri can take the Baba Budangiri hills as their next trekking destination. While it is very rewarding to finish off the trek with the prettiest sight of the valley, it goes without saying that you should always follow the advice of experienced trekkers.</p>
+        <h2 class="sub-heading">Z-Point</h2>
+        <p class="post-text">All these trekking points will have the non-trekkers exhausted. That’s where Z-point comes in. Not only can you tag along with your extrovert buddies but you can also take a breather by being in the lap of nature. Fact is, it is indeed a trekking destination but a rather short one. Since it’s not very taxing you can spend your time photographing, camping and sightseeing.</p>
+        <h2 class="sub-heading">Sringeri Mutt</h2>
+        <p class="post-text">Located on the banks of the Tunga river with the calming sound of the waterfalls in the background, Sringeri Mutt worships the Goddess Saraswati. The temple was established by Sri Adi Sankara, one of the greatest Indian reformers, in the 8th century. The temple emanates an intense spiritual energy that is simultaneously soothing and energizing.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-12.jpg') }}" alt="" class="content-img">
+        <h2 class="sub-heading">Belavadi</h2>
+        <p class="post-text">Known for its exquisite architecture, Belavadi is a hidden gem. One can lose track of time admiring the beauty of the Veera Narayana temple, built centuries ago by the Hoysala Kings in this quaint little temple town.</p>
+            
+    </section>
+
+    <div class="share post-container">
+        <span class="share-title">Share this Article</span>
+        <div class="social">
+            <a href="https://www.facebook.com/KSTDCLtd1/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/kstdc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/kstdc/?hl=en"><i class="bx bxl-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer-container">
+        <p>&#169; Corporation All Rights Reserved</p>
+    </div>    
+    <!-- blog section ends -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

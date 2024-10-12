@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Contact</title>
+</head>
+<body class="bdy">
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>  
+        <nav class="navbar">
+            <a href="/index">Home</a>
+            <a href="/blog">Blog</a>
+            <!-- <a href="#packages">Packages</a> -->
+            <a href="/gallery">Gallery</a>
+            <!-- <a href="#reviews">Reviews</a> -->
+            <a href="/contact">Contact</a>
+            <a href="/serch">Search</a>
+        </nav>
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <!-- <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i> -->
+        </div>
+        
+    </header>
+    <div class="about">
+        <div class="container1">
+            <div class="article">
+                <div class="content">
+                    <h1>About Us</h1>
+                </div>
+                <div class="line"></div><br>
+                <div class="about-content">
+                    <h2 class="sub-heading">A Destination Where Wonder Meets Experience</h2>
+                    <p class="post-text">If explored, this world is a beautiful place
+                        where each destination is a heavenly experience. And, if you want to go beyond and walk into a land which is a piece Of paradise, we invite you to
+                        Karnataka.
+                        Karnataka cannot be felt, it has to be lived. It’s majestically bestowed with everything from plains to 
+                        mountains, valleys to rivers, high-rises to ancient temples, and artificial 
+                        gardens to coffee plantations. And we take the responsibility of journeying you across India’s finest tourism destination.</p>
+                    <div class="button">
+                        <a href="/readmore" class="btn">Read More</a>
+                        <a href="/touch" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="{{ url_for('static', filename='images/aboutus.jpg') }}" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

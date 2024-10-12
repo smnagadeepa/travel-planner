@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Blog</title>
+    <!-- Ensure the Font Awesome link is correct -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>    
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>  
+        <nav class="navbar">
+            <a href="/index">Home</a>
+            <a href="/blog">Blog</a>
+            <!-- <a href="#packages">Packages</a> -->
+            <a href="/gallery">Gallery</a>
+            <!-- <a href="#reviews">Reviews</a> -->
+            <a href="/contact">Contact</a>
+            <a href="/serch">Search</a>
+        </nav>
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <!-- <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i> -->
+        </div>
+        
+    </header>  
+    <!-- Post content -->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <a href="/blog" class="back-home">Back to home</a>
+            <h1 class="header-title">A beach for every mood</h1>
+            <img src="{{ url_for('static', filename='images/blogpic-21.jpg') }}" alt="" class="header-img">
+        </div>
+    </section>
+    <section class="post-content">
+        <h2 class="sub-heading">A beach for every mood.</h2>
+        <p class="post-text">To completely get into the holiday mode, you have to go to a beach. That is the universal truth. The way the ocean puts one in a trance as the waves wash over your feet. The golden sands and gleaming rocks waiting for the velvety tides to splash them again and again. No vacation is complete without a beach trip. So, what are you waiting for? Pack up and head to Karnataka, a state blessed with an incredibly beautiful coastline and has a beach for every mood and crowd.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-21.jpg') }}" alt="" class="content-img">
+        <h2 class="sub-heading">Om Beach</h2>
+        <p class="post-text">A visit to Gokarna is incomplete without Om beach. The most beautiful location in Gokarna, this beach is synonymous with serenity. But why is it called the Om beach? As hyperbolic as it sounds, this beach is shaped like the symbol Om. To the local communities this spiritual connotation makes the beach auspicious.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-22.jpg') }}" alt="" class="content-img">
+        <p class="post-text">Banana boat rides, bumper boat rides, dolphin spotting, jet skiing, fishing, trekking, and speed boating are some adventurous activities available here for the adrenaline junkies. Try visiting sometime between October and March for a more enjoyable experience.</p>
+        <h2 class="sub-heading">Devbhag Beach</h2>
+        <p class="post-text">Devbagh beach is a sight to behold. There’s white sand, clear water and lots of sunshine. The beach sprawls across – a vast expanse that is pristine and serene. Scuba diving, snorkeling, speed boat cruises, banana rides and parasailing are some of the recreational activities you can try here. You can also spot flocks of local sea birds called sea eagles.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-23.jpg') }}" alt="" class="content-img">
+        <h2 class="sub-heading">Kaup</h2>
+        <p class="post-text">Kaup beach, locally called Kapu, is in Udupi. One of the main attractions of this rocky beach is its lighthouse. There is also a fort built during the time of Tipu Sultan adjacent to the beach. The panoramic view of the Arabian sea from this idyllic beach town is truly spectacular.</p>
+        <h2 class="sub-heading">Mangalore</h2>
+        <p class="post-text">Mangalore is home to myriad beaches that attract plenty of tourists every year. Tannirbhavi, Panambur, Someshwara, Surathkal and Ullal are some of the major beaches of this port city. The ideal time to visit is between November and February.</p>
+        <h2 class="sub-heading">St. Mary's Island</h2>
+        <p class="post-text">A land that holds historical and geopolitical significance, St. Mary’s Island is a quaint island off the coast of Udupi. It is said that Vasco Da Gama visited these islands during his first voyage to the India. The St. Mary’s Island has white sandy beaches, monolithic rock formations and wildlife. Daryabahadurgarh Fort, Vadabhandeshwara Temple and Malpe Beach are major tourist attractions in and around the area.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-24.jpg') }}" alt="" class="content-img">
+    </section>
+
+    <div class="share post-container">
+        <span class="share-title">Share this Article</span>
+        <div class="social">
+            <a href="https://www.facebook.com/KSTDCLtd1/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/kstdc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/kstdc/?hl=en"><i class="bx bxl-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer-container">
+        <p>&#169; Corporation All Rights Reserved</p>
+    </div>    
+    <!-- blog section ends -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

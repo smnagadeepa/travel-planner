@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>  
+        <nav class="navbar">
+            <a href="/index">Home</a>
+            <a href="/blog">Blog</a>
+            <!-- <a href="#packages">Packages</a> -->
+            <a href="/gallery">Gallery</a>
+            <!-- <a href="#reviews">Reviews</a> -->
+            <a href="/contact">Contact</a>
+            <a href="/serch">Search</a>
+        </nav>
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <!-- <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i> -->
+        </div>
+        
+    </header>  
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+
+    <div class="box-container">
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/gallery7.jpg') }}" alt="">
+            <div class="content">
+                <h3>JOG FALLS</h3>
+                <p>One of the highest waterfalls in India and also Known as Jogada Gundi</p>
+            </div> 
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/gallery2.jpg') }}" alt="">
+            <div class="content">
+                <h3>HAMPI</h3>
+                <p> Stone Chariot is an iconic monument located in front of Vijaya Vittala Temple in Hampi.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/gallery3.jpg') }}" alt="">
+            <div class="content">
+                <h3>GOMATESHWARA</h3>
+                <p> The Gomateshwara Statue is the largest monolithic idol in the world.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/gallery5.jpg') }}" alt="">
+            <div class="content">
+                <h3>GOLDEN CHARIOT</h3>
+                <p>A luxury train-Golden Chariot is a window to the soul of South India.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/gallery4.webp') }}" alt="">
+            <div class="content">
+                <h3>ADIYOGI</h3>
+                <p>With the presence of the Yogeshwar Linga, has become a living entity.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/gallery6.jpg') }}" alt="">
+            <div class="content">
+                <h3>IRUPPU FALLS</h3>
+                <p> It is a fresh water cascade situated in Kodagu district.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/gallery1.jpg') }}" alt="">
+            <div class="content">
+                <h3>MYSORE PLACE</h3>
+                <p>A historical and a royal residence known as Amba Vilas palace .</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/gallery8.jpg') }}" alt="">
+            <div class="content">
+                <h3>GATIKALLU PEAK</h3>
+                <p> Nested in the lap of a mighty   ballarayanadurga fort.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/gallery9.jpg') }}" alt="">
+            <div class="content">
+                <h3>GOLDEN TREE</h3>
+                <p> Magnificent waterfall cascade down the mountainside.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/gallery10.jpg') }}" alt="">
+            <div class="content">
+                <h3>HOYSALESHWARA TEMPLE</h3>
+                <p> Shaivism tradition  twin-shrined temple.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+</html>

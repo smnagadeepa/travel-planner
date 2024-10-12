@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Blog</title>
+    <!-- Ensure the Font Awesome link is correct -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>    
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>  
+        <nav class="navbar">
+            <a href="/index">Home</a>
+            <a href="/blog">Blog</a>
+            <!-- <a href="#packages">Packages</a> -->
+            <a href="/gallery">Gallery</a>
+            <!-- <a href="#reviews">Reviews</a> -->
+            <a href="/contact">Contact</a>
+            <a href="/serch">Search</a>
+        </nav>
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <!-- <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i> -->
+        </div>
+        
+    </header>
+    <!-- Post content -->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <a href="/blog" class="back-home">Back to home</a>
+            <h1 class="header-title">Explore Festive Side Of Mysuru</h1>
+            <img src="{{ url_for('static', filename='images/blogpic-41.jpg') }}" alt="" class="header-img">
+        </div>
+    </section>
+    <section class="post-content">
+        <h2 class="sub-heading">Explore The Festive Side Of Mysuru</h2>
+        <p class="post-text">When the entire country erupts in celebrations for Dussehra, Mysore takes it a step further. It’s no longer a celebration, but a way of life for Mysore. Commonly known as the Nadahabba in Kannada, the culture of Mysore involves a 10-day festival. The prep work for the festival begins early so that the whole city looks dazzling just in time for Dussehra. Dance, music, carnivals, processions, bazaars so many things pop up to match the celebratory mood the city is in. And thus begins an extravaganza that is unmatched in its exuberance.</p>
+        <h2 class="sub-heading">The Myth</h2>
+        <p class="post-text">The origin of Dussehra is rooted in the legend of goddess Durga achieving triumph over the demon Mahishasura. The mythology texts narrate how the demon who sought immortality challenged and terrorised gods. He was confident that he would not be killed by a woman. All hell broke loose when goddess Durga challenged him to a duel. It was an epic battle that lasted 9 days, and ended with the goddess slaying the demon on the tenth day. This is why the nine days celebrate the different avatars of the goddess, with the grand finale dedicated to Goddess Durga herself.</p>
+        <h2 class="sub-heading">Durga Puja</h2>
+        <p class="post-text">Since Dussehra marks the victory of goddess Durga over Mahishasura, the idol of the warrior goddess is worshipped by the royal couple prior to the Jumbo Savari.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-41.jpg') }}" alt="" class="content-img">
+        <h2 class="sub-heading">Jamboo Savari</h2>
+        <p class="post-text">The Jamboo Savari or the elephant procession is iconic. It involves a procession of 12 elephants – adorned with colourful trappings and carrying golden howdahs – across the city. One of the elephants carries Lord Chamundeshwari’s idol. The procession is accompanied by groups of singers, dancers and cavalry.</p>
+        <h2 class="sub-heading">Palace</h2>
+        <p class="post-text">Mysore Palace remains the central attraction of every Dussehra celebration. Decked up with around 100000 light bulbs, the palace transforms into a sea of colourful lights during the Dussehra nights. Tourists and locals alike are allowed to visit the place simply because it is a beautiful sight to behold. The festivities were first initiated by the Wadiyar royalty years ago. They still perform poojas to showcase their loyalty to the traditions.</p>
+        <img src="{{ url_for('static', filename='images/blogpic-42.jpg') }}" alt="" class="content-img">
+        <h2 class="sub-heading">Dussehra Exhibition</h2>
+        <p class="post-text">Opposite to the Mysore palace is the Doddekara Maidana, where the much-anticipated exhibition takes place. Be it textiles, food, kitchenware, cosmetics or toys everything is available at the exhibition. Apart from vendors, university students and government officials also set up stalls. There will be a host of amusement rides including the ferris wheel, which attracts a huge number of people.</p>
+        <!-- <img src="images/blogpic-12.jpg" alt="" class="content-img"> -->
+        <h2 class="sub-heading">Wrestling</h2>
+        <p class="post-text">Traditional wrestling or Nada Kusti is one of the highlights of the Dussehra festivities. Wrestlers all over the country partake in the event which has been a part of the Dussehra celebrations for centuries now.</p>
+        <h2 class="sub-heading">Flower Show</h2>
+        <p class="post-text">A prominent attraction, the flower show is hosted at the Nishadh Bagh or Kupanna Park. This veritable feast of colours and fragrances is a treat to the eyes of any onlooker.</p>
+    </section>
+
+    <div class="share post-container">
+        <span class="share-title">Share this Article</span>
+        <div class="social">
+            <a href="https://www.facebook.com/KSTDCLtd1/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/kstdc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/kstdc/?hl=en"><i class="bx bxl-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer-container">
+        <p>&#169; Corporation All Rights Reserved</p>
+    </div>    
+    <!-- blog section ends -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

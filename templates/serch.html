@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Blog</title>
+    <!-- Ensure the Font Awesome link is correct -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>  
+        <nav class="navbar">
+            <a href="/index">Home</a>
+            <a href="/blog">Blog</a>
+            <!-- <a href="#packages">Packages</a> -->
+            <a href="/gallery">Gallery</a>
+            <!-- <a href="#reviews">Reviews</a> -->
+            <a href="/contact">Contact</a>
+            <a href="/serch">Search</a>
+        </nav>
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <!-- <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i> -->
+        </div>
+    </header><br><br>
+    <div class="for-form">
+        
+        <div class="for-form1">
+            <h3>Plan Your Trip Here!!</h3>
+            <form action="/answers" class="search-bar-container1" method="POST">  
+                <div class="inputBox1">
+                    <label class="lab" for="days">Number of Days:</label>
+                    <input type="number" id="days" name="days" required><br><br>
+                </div>    
+                <div class="inputBox1">
+                    <label class="lab" for="from">From:</label>
+                    <select id="from" name="from" required>
+                        <option value="">Select a district</option>
+                        <option value="Bagalkot">Bagalkot</option>
+                        <option value="Ballari">Ballari (Bellary)</option>
+                        <option value="Belagavi">Belagavi (Belgaum)</option>
+                        <option value="BengaluruRural">Bengaluru Rural</option>
+                        <option value="BengaluruUrban">Bengaluru Urban</option>
+                        <option value="Bidar">Bidar</option>
+                        <option value="Chamarajanagar">Chamarajanagar</option>
+                        <option value="Chikballapur">Chikballapur</option>
+                        <option value="Chikkamagaluru">Chikkamagaluru (Chikmagalur)</option>
+                        <option value="Chitradurga">Chitradurga</option>
+                        <option value="DakshinaKannada">Dakshina Kannada</option>
+                        <option value="Davanagere">Davanagere</option>
+                        <option value="Dharwad">Dharwad</option>
+                        <option value="Gadag">Gadag</option>
+                        <option value="Hassan">Hassan</option>
+                        <option value="Haveri">Haveri</option>
+                        <option value="Kalaburagi">Kalaburagi (Gulbarga)</option>
+                        <option value="Kodagu">Kodagu (Coorg)</option>
+                        <option value="Kolar">Kolar</option>
+                        <option value="Koppal">Koppal</option>
+                        <option value="Mandya">Mandya</option>
+                        <option value="Mysuru">Mysuru (Mysore)</option>
+                        <option value="Raichur">Raichur</option>
+                        <option value="Ramanagara">Ramanagara</option>
+                        <option value="Shivamogga">Shivamogga (Shimoga)</option>
+                        <option value="Tumakuru">Tumakuru (Tumkur)</option>
+                        <option value="Udupi">Udupi</option>
+                        <option value="UttaraKannada">Uttara Kannada (Karwar)</option>
+                        <option value="Vijayapura">Vijayapura (Bijapur)</option>
+                        <option value="Yadgir">Yadgir</option>
+                      </select>
+                      <br><br>
+                </div>
+                <div class="inputBox1">
+                    <label class="lab" for="to">To:</label>
+                    <select id="to" name="to" required>
+                        <option value="">Select a district</option>
+                        <option value="Bagalkot">Bagalkot</option>
+                        <option value="Ballari">Ballari (Bellary)</option>
+                        <option value="Belagavi">Belagavi (Belgaum)</option>
+                        <option value="BengaluruRural">Bengaluru Rural</option>
+                        <option value="BengaluruUrban">Bengaluru Urban</option>
+                        <option value="Bidar">Bidar</option>
+                        <option value="Chamarajanagar">Chamarajanagar</option>
+                        <option value="Chikballapur">Chikballapur</option>
+                        <option value="Chikkamagaluru">Chikkamagaluru (Chikmagalur)</option>
+                        <option value="Chitradurga">Chitradurga</option>
+                        <option value="DakshinaKannada">Dakshina Kannada</option>
+                        <option value="Davanagere">Davanagere</option>
+                        <option value="Dharwad">Dharwad</option>
+                        <option value="Gadag">Gadag</option>
+                        <option value="Hassan">Hassan</option>
+                        <option value="Haveri">Haveri</option>
+                        <option value="Kalaburagi">Kalaburagi (Gulbarga)</option>
+                        <option value="Kodagu">Kodagu (Coorg)</option>
+                        <option value="Kolar">Kolar</option>
+                        <option value="Koppal">Koppal</option>
+                        <option value="Mandya">Mandya</option>
+                        <option value="Mysuru">Mysuru (Mysore)</option>
+                        <option value="Raichur">Raichur</option>
+                        <option value="Ramanagara">Ramanagara</option>
+                        <option value="Shivamogga">Shivamogga (Shimoga)</option>
+                        <option value="Tumakuru">Tumakuru (Tumkur)</option>
+                        <option value="Udupi">Udupi</option>
+                        <option value="UttaraKannada">Uttara Kannada (Karwar)</option>
+                        <option value="Vijayapura">Vijayapura (Bijapur)</option>
+                        <option value="Yadgir">Yadgir</option>
+                      </select>
+                      <br><br>
+                </div>
+                <div class="inputBox1"><button type="submit" onclick="return submitForm()" class="btn">Submit</button></div>
+                
+                
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src={{url_for('static',filename='js/script.js')}}></script>
+</body>

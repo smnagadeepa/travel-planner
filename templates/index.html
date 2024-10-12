@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <!-- Ensure the Font Awesome link is correct -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>  
+        <nav class="navbar">
+            <a href="/index">Home</a>
+            <a href="/blog">Blog</a>
+            <!-- <a href="#packages">Packages</a>
+            <a href="#services">Services</a> -->
+            <a href="/gallery">Gallery</a>
+            <!-- <a href="#reviews">Reviews</a> -->
+            <a href="/contact">Contact</a>
+            <a href="/serch">Search</a>
+        </nav>
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <i id="search-btn"></i>
+            <i id="login-btn"></i>
+        </div>
+        
+    </header>
+
+    <!-- login form container starts -->
+     <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password?<a href="#">click here</a></p>
+            <p>don't have an account?<a href="#">Register now!</a></p>
+        </form>
+     </div>
+     <!-- login form container ends -->
+
+    <!-- home section start -->
+     <section class="home" id="home">
+        <div class="content">
+            <h3>adventure is worth while</h3>
+            <p>discover new places with us, adventure awaits</p>
+            <a href="/blog" class="btn">discover more</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src={{ url_for('static', filename='images/vid-1.mp4') }}></span>
+            <span class="vid-btn " data-src={{ url_for('static', filename='images/vid-2.mp4') }}></span>
+            <span class="vid-btn " data-src={{ url_for('static', filename='images/vid-3.mp4') }}></span>
+            <span class="vid-btn " data-src={{ url_for('static', filename='images/vid-4.mp4') }}></span>
+            <span class="vid-btn " data-src={{ url_for('static', filename='images/vid-5.mp4') }}></span>
+        </div>
+        <div class="video-container">
+            <video src={{ url_for('static', filename="images/vid-1.mp4") }} id="video-slider" loop autoplay muted></video>
+        </div>
+     </section>
+    <!-- home section ends -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src={{ url_for('static', filename='js/script.js') }}></script>
+</body>
+</html>

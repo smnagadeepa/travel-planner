@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Ensure the Font Awesome link is correct -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>    
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>  
+        <nav class="navbar">
+            <a href="/index">Home</a>
+            <a href="/blog">Blog</a>
+            <!-- <a href="#packages">Packages</a> -->
+            <a href="/gallery">Gallery</a>
+            <!-- <a href="#reviews">Reviews</a> -->
+            <a href="/contact">Contact</a>
+            <a href="/serch">Search</a>
+        </nav>
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <!-- <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i> -->
+        </div>
+        
+    </header>  
+    <!-- blog section starts -->
+    <section class="blog" id="blog">
+        <h1 class="heading">
+            <span>b</span>
+            <span>l</span>
+            <span>o</span>
+            <span>g</span>
+            <span class="space"></span>
+            <span>i</span>
+            <span>s</span>
+            <span class="space"></span>
+            <span>h</span>
+            <span>e</span>
+            <span>r</span>
+            <span>e</span>
+        </h1>
+    </section>
+
+    <section class="post-container">
+        <!-- post box 1 -->
+        <div class="post-box">
+            <img src="{{ url_for('static', filename='images/blogpic-11.jpg') }}" alt="" class="post-img">
+            <h2 class="category">Chikmagaluru</h2>
+            <a href="/cml" class="post-title">
+                Keeping it chic in Chickamagaluru
+            </a>
+            <p class="post-description">Chikmagalur is a beautiful district located in the western part of Karnataka. A picturesque location renowned for its dense greenery, rugged mountains and acres of tea and coffee plantations, Chikmagalur is an adventure seeker’s abode and a pilgrim’s paradise. Here’s a guide if you are planning to visit the region.</p>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/blogprofile-1.jpeg') }}" alt="" class="profile-img">
+                <span class="profile-name">Abhishek</span>
+            </div>
+        </div>
+
+        <!-- post box 2 -->
+        <div class="post-box">
+            <img src="{{ url_for('static', filename='images/blogpic-21.jpg') }}" alt="" class="post-img">
+            <h2 class="category">Beach</h2>
+            <a href="/beach" class="post-title">
+                A beach for every mood.
+            </a>
+            <p class="post-description">To completely get into the holiday mode, you have to go to a beach. That is the universal truth. The way the ocean puts one in a trance as the waves wash over your feet. The golden sands and gleaming rocks waiting for the velvety tides to splash them again and again. No vacation is complete without a beach trip. So, what are you waiting for? Pack up and head to Karnataka, a state blessed with an incredibly beautiful coastline and has a beach for every mood and crowd.</p>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/blogprofile-2.webp') }}" alt="" class="profile-img">
+                <span class="profile-name">Rakshitha</span>
+            </div>
+        </div>
+
+        <!-- post box 3 -->
+        <div class="post-box">
+            <img src="{{ url_for('static', filename='images/blogpic-31.jpg') }}" alt="" class="post-img">
+            <h2 class="category">Coorg</h2>
+            <a href="/coorg" class="post-title">
+                More scottish than Scotland
+            </a>
+            <p class="post-description">Picturing Coorg is a form of meditation in itself. 
+                The smell of filter coffee is strong enough to wake you up. The fog from the misty hills wraps you 
+                in a cocoon of slumber. The lull of sleep gently lifts from your eyes as it is exposed 
+                to the dewy verdant greenery all around. The smile and affability of the Kodavas make you feel at home.</p>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/blogprofile-3.jpeg') }}" alt="" class="profile-img">
+                <span class="profile-name">Sharath</span>
+            </div>
+        </div>
+
+        <!-- post box 4 -->
+        <div class="post-box">
+            <img src="{{ url_for('static', filename='images/blogpic-41.jpg') }}" alt="" class="post-img">
+            <h2 class="category">Mysuru</h2>
+            <a href="post-page.html" class="post-title">
+                Explore festive side of Mysuru
+            </a>
+            <p class="post-description">When the entire country erupts in celebrations for Dussehra, Mysore takes it a 
+                step further. It’s no longer a celebration, but a way of life for Mysore. Commonly known as the Nadahabba in Kannada, 
+                the culture of Mysore involves a 10-day festival. The prep work for the festival begins early so that the whole 
+                city looks dazzling just in time for Dussehra. Dance, music, carnivals, processions, bazaars so many things pop up to match the 
+                celebratory mood the city is in. And thus begins an extravaganza that is unmatched in its exuberance.</p>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/blogprofile-4.jpg') }}" alt="" class="profile-img">
+                <span class="profile-name">Jahnavi</span>
+            </div>
+        </div>
+
+        <!-- post box 5 -->
+        <div class="post-box">
+            <img src="{{ url_for('static', filename='images/blogpic-51.jpg') }}" alt="" class="post-img">
+            <h2 class="category">Twin cities</h2>
+            <a href="post-page.html" class="post-title">
+                Tale of twin cities
+            </a>
+            <p class="post-description">Belur and Halebidu are a package deal. You can’t have one and be off your way. So for the lovers of art, history, 
+                architecture and sculpture, there’s not one but two amazing destinations awaiting your curiosity.</p>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/blogprofile-5.jpeg') }}" alt="" class="profile-img">
+                <span class="profile-name">Varun</span>
+            </div>
+        </div>
+        
+        <!-- post box 6 -->
+        <div class="post-box">
+            <img src="{{ url_for('static', filename='images/blogpic-61.jpg') }}" alt="" class="post-img">
+            <h2 class="category">Bengalurur</h2>
+            <a href="post-page.html" class="post-title">
+                Marvel's glore in Bangalore
+            </a>
+            <p class="post-description">Bangalore is a metropolis of many wonders. The vibrant nightlife, pleasant climate, high-end shopping spots, eclectic food joints, bustling IT sector, ubiquitous parks, groovy pubs
+                 and the lively art-and-culture scene make this city one of the most happening places in the country.</p>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/blogprofile-6.jpeg') }}" alt="" class="profile-img">
+                <span class="profile-name">Shreya</span>
+            </div>
+        </div>
+
+        <!-- post box 7 -->
+        <div class="post-box">
+            <img src="{{ url_for('static', filename='images/blogpic-71.jpg') }}" alt="" class="post-img">
+            <h2 class="category">Shivamogga</h2>
+            <a href="post-page.html" class="post-title">
+                Make a way for the epic cascade of Karnataka
+            </a>
+            <p class="post-description">Waterfalls make for gorgeous getaways. Karnataka with its network of rivers and undulating terrains give way to cascades that hold you spellbound. Stepping stones along the length of forest brooks lead you to natural springs and tumbling waterscapes. Rivers plummet off the tip of a rugged hillock roaring with the sheer delight of experiencing a free fall. Each cascade with a charisma 
+                of its own is sure to lure you into the abundance of nature and jolt you out of the blues.</p>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/blogprofile-7.jpeg') }}" alt="" class="profile-img">
+                <span class="profile-name">Sonali</span>
+            </div>
+        </div>
+
+        <!-- post box 8 -->
+        <div class="post-box">
+            <img src="{{ url_for('static', filename='images/blogpic-81.jpg') }}" alt="" class="post-img">
+            <h1 class="category">Vijayanagara</h1>
+            <a href="post-page.html" class="post-title">
+                A guide to Karnataka's North face: Hampi
+            </a>
+            <p class="post-description">The aesthetics of antiquity, the richness of the royalty, the doctrine of the divine, the mystique of the music, the elegance of the ecology—only the rarest places on the planet can claim all of these as its own. It was reason enough for The New York Times
+                 to list this Indian village as the second must-see global destination in 2019. Readers, meet Hampi.</p>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/blogprofile-8.jpeg') }}" alt="" class="profile-img">
+                <span class="profile-name">Sharvari</span>
+            </div>
+        </div>
+        
+        <!-- post box 9 -->
+        <div class="post-box">
+            <img src="{{ url_for('static', filename='images/blogpic-91.jpg') }}" alt="" class="post-img">
+            <h2 class="category">Culture</h2>
+            <a href="post-page.html" class="post-title">
+                Art forms that informs Karnataka's culture
+            </a>
+            <p class="post-description">Karnataka is home to a rich and vibrant collection of art forms. 
+                While most of them, rooted in the local folklore and customs, portrays a combination of 
+                percussion, dance, and drama, some others even showcase elements of mysticism. 
+                These ethnic art forms are performed during particular seasons and not always throughout the year, 
+                hence plan your travels accordingly if you want to experience them. Curated below is an elaborate list of
+                 Karnataka’s art forms that will help inform you better about these cultural experiences.</p>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='images/blogprofile-9.jpeg') }}" alt="" class="profile-img">
+                <span class="profile-name">Sanman</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <p>&#169; Corporation All Rights Reserved</p>
+        <div class="social">
+            <a href="https://www.facebook.com/KSTDCLtd1/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/kstdc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/kstdc/?hl=en"><i class="bx bxl-instagram"></i></a>
+         </div>
+    </div>
+     
+    
+    <!-- blog section ends -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bdy">
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>  
+        <nav class="navbar">
+            <a href="/index">Home</a>
+            <a href="/blog">Blog</a>
+            <!-- <a href="#packages">Packages</a> -->
+            <a href="/gallery">Gallery</a>
+            <!-- <a href="#reviews">Reviews</a> -->
+            <a href="/contact">Contact</a>
+            <a href="/serch">Search</a>
+        </nav>
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <!-- <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i> -->
+        </div>
+        
+    </header> 
+    <div class="">
+        <div class="more">
+            <div class="container">
+                <div class="article1">
+                    <div class="content">
+                        <h1>Vision</h1>
+                    </div>
+                    <div class="line"></div><br>
+                    <div class="about-content">
+                        <p class="post-text">Karnataka is known for its rich cultural heritage, diverse traditions, and stunning natural landscapes. Our website is committed to promoting sustainable tourism to ensure safe, comfortable, and memorable experiences for both domestic and international tourists.</p>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="{{ url_for('static', filename='images/vision.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="more">
+            <div class="container">
+                <div class="object">
+                    <div class="content">
+                        <h1>Objectives</h1>
+                    </div>
+                    <div class="line"></div><br>
+                    <div class="about-content">
+                            <ul class="post-text">
+                                <li>Simplify Travel Planning: Develop an intuitive and user-friendly platform that streamlines the process of planning trips by consolidating travel-related information and services into one accessible application.</li>
+                                <li>Centralize Information: Aggregate data from various sources to provide users with local attractions and reducing the need for extensive research across multiple platforms.</li>
+                                <li>Enhance User Experience with Personalization: Implement advanced algorithms to offer personalized travel recommendations based on user preferences, past travel history, and budget constraints, ensuring tailored and enjoyable travel experiences.</li>
+                                <li>Enhance Safety and Accessibility: Provide up-to-date travel advisories and safety information, and ensure the application is accessible on various devices, including mobile, to support users on the go.</li>
+                                <li>Improve Decision Making with Reviews and Ratings: Incorporate user reviews and ratings for hotels, restaurants, and attractions, helping users make informed decisions based on the experiences of other travelers.</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="object-section">
+                    <img src="{{ url_for('static', filename='images/objectives.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+     
+</body>
+</html>
